@@ -5,26 +5,29 @@
   <title>Inicio</title>
   <meta name="description" content="Una pagina para nuestras mascotas. Somos una veterinaria">
   <meta name="keywords" content="Un buen dr. Veterinario, Vacunas, Tratamiendos, Baños">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/header.css">
+
 </head>
 
 <body>
   <!--Encabezado, logo e informacion de contacto-->
-  <header>
-    <div>
+  <header class="header">
+    <div class="container container--100h flex flex--between flex--centerv">
       <a href="index.html">
-        <img src="img/paginaInicial/logo.svg" alt="" width="250">
+        <img src="img/paginaInicial/logo.svg" alt="" id="logo">
       </a>
       <!--Info Contacto-->
-      <ol>
-        <li>
-          <i></i>
+      <ol id="header__listcontac" class="flex flex--gap">
+        <li class="flex flex--centerv flex--gap">
+          <i class="list__icon fa-solid fa-phone text--blue"></i>
           <p>
             <strong>Llamános:</strong><br>
             511-388-7814
           </p>
         </li>
-        <li>
-          <i></i>
+        <li class="flex flex--centerv flex--gap">
+          <i class="list__icon fa-solid fa-clock text--blue"></i>
           <p>            
             <p>
               <strong>Horarios:</strong><br>
@@ -35,11 +38,13 @@
       </ol>
     </div>
   </header>
+  <!--Separator-->
+  <div class="separator"></div>
   <!--Navegacion Menu-->
-  <nav>
-    <div>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
+  <nav class="nav background--blue">
+    <div class="container container--100h flex flex--centerv flex--right">
+      <ul id="nav__list" class="flex flex--gap">
+        <li><a href="index.html" class="link--active">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="galeria.html">Galería</a></li>

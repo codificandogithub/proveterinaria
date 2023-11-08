@@ -1,0 +1,98 @@
+/*Reset*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    background-color: rgba(255, 255, 255, .5);
+    border-bottom: 0.18rem solid orangered;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1111;
+}
+
+.container{
+    margin: auto;
+    max-width: 1400px;
+    width: 95%;
+}
+
+.container--100h{
+    height: 100%;
+}
+
+#logo{
+    width: 220px;
+}
+
+/*Elementos flexibles o cajas flexibles*/
+.flex{
+    display: flex;
+}
+
+.flex--between{
+    justify-content: space-between;    
+}
+
+.flex--centerv{
+    align-items: center;
+}
+
+.flex--gap{
+    gap: 8px;
+}
+
+/*Colores */
+.text--blue{
+    color: #0095E5;
+}
+
+.background--blue{
+    background-color: #0095E5;
+}
+
+
+.list__icon{
+    border: 0.15rem solid #0095E5;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.separator{
+    padding-top: 70px;
+}
+
+/*Navegacion*/
+.nav{
+    height: 60px;
+}
+
+.nav a{
+    color: white;
+    font-weight: 600;
+}
+
+.flex--right{
+    justify-content: right;
+}
+
+#nav__list{
+    list-style: none;
+}
+
+#nav__list.flex--gap{
+    gap: 1rem;
+}
